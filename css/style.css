@@ -171,13 +171,13 @@ ol {
 	text-transform: uppercase;
 	padding: 14px 25px 12px;
 	color: #ffffff;
-	background: #5c00ce;
+	background: #290849;
 	letter-spacing: 2px;
 }
 
 .primary-btn.border-btn {
 	background: transparent;
-	border: 2px solid #5c00ce;
+	border: 2px solid #290849;
 	color: #111111;
 }
 
@@ -2613,6 +2613,61 @@ ol {
 
 .contact__form p {
 	margin-bottom: 34px;
+}
+
+/* === About page styles === */
+.about-page {
+    padding: 100px 0;
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+.about-card {
+    /* background: linear-gradient(135deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35)); */
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    animation: slideInLeft 0.9s ease both;
+}
+.about-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.about-title span { color: black; }
+.about-card p { font-size: 18px; line-height: 1.8; margin-bottom: 18px; }
+.about-pic img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    animation: zoomIn 1s ease both;
+}
+.decor-icon {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 80px;
+    color: rgba(255,255,255,0.06);
+    transform: rotate(-18deg);
+}
+
+/* small animations */
+@keyframes slideInLeft {
+    from { transform: translateX(-40px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+@keyframes zoomIn {
+    from { transform: scale(0.98); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* responsive */
+@media (max-width: 991px) {
+    .about-title { font-size: 36px; }
+    .about-card { padding: 28px; margin-bottom: 30px; }
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
